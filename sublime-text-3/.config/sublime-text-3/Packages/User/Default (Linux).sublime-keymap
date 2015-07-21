@@ -1,0 +1,13 @@
+[
+	{ "keys": ["alt+shift+g"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Git: " } },
+
+	{ "keys": ["alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console-log.sublime-macro"} },
+
+	{ "keys": ["alt+space"], "command": "exit_insert_mode",
+		"context":
+		[
+			{ "key": "setting.command_mode", "operand": false },
+			{ "key": "setting.is_widget", "operand": false }
+		]
+	}
+]

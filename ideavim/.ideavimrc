@@ -1,0 +1,6 @@
+
+" Выход в командный режим
+" <Esc>
+inoremap <A-space> <Esc>
+vnoremap <A-space> <Esc>
+
