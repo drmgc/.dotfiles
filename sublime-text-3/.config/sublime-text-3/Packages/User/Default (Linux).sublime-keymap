@@ -1,4 +1,7 @@
 [
+	// TrailingSpaces
+	{ "keys": ["alt+shift+o"], "command": "toggle_trailing_spaces" },
+
 	// SideBarEnhancements
 	{ "keys": ["alt+f12"], "command": "side_bar_open_in_browser", "args":{"paths":[], "type":"production", "browser":""} },
 
