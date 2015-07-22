@@ -1,8 +1,14 @@
 [
+	// SideBarEnhancements
+	{ "keys": ["alt+f12"], "command": "side_bar_open_in_browser", "args":{"paths":[], "type":"production", "browser":""} },
+
+	// Git
 	{ "keys": ["alt+shift+g"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Git: " } },
 
+	// Macro
 	{ "keys": ["alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console-log.sublime-macro"} },
 
+	//Vintage
 	{ "keys": ["alt+space"], "command": "exit_insert_mode",
 		"context":
 		[
