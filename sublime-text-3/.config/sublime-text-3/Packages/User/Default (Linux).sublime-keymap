@@ -1,4 +1,7 @@
 [
+	// EasyMotion
+	{ "keys": ["alt+d", "<character>"], "command": "easy_motion", "args": {"select_text": false} },
+
 	// TrailingSpaces
 	{ "keys": ["alt+shift+o"], "command": "toggle_trailing_spaces" },
 
