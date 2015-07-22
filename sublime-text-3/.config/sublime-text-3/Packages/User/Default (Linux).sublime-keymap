@@ -5,6 +5,9 @@
 	// Git
 	{ "keys": ["alt+shift+g"], "command": "show_overlay", "args": {"overlay": "command_palette", "text": "Git: " } },
 
+	// toggle_white_space.py
+	{ "keys": ["alt+shift+w"], "command": "toggle_white_space" },
+
 	// Macro
 	{ "keys": ["alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console-log.sublime-macro"} },
 
