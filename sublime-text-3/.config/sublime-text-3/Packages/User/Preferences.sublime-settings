@@ -1,6 +1,7 @@
 {
 	"color_scheme": "Packages/Theme - Spacegray/base16-ocean.dark.tmTheme",
 	"highlight_line": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 	],
