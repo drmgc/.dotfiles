@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-if not isinstance(${1:var}, ${2:types}): raise TypeError("${1:var} must be instance of ${2:types})"
+if not isinstance(${1:var}, ${2:types}): raise TypeError("${1:var} must be instance of ${2:types}")
 ]]></content>
 	<tabTrigger>asserttyp</tabTrigger>
 	<scope>source.python</scope>
