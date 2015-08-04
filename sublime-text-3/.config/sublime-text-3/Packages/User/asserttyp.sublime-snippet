@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+assert isinstance(${1:var}, ${2:types}), "${1:var} must be ${2:types}"
+]]></content>
+	<tabTrigger>asserttyp</tabTrigger>
+	<scope>source.python</scope>
+</snippet>
