@@ -1,4 +1,6 @@
 [
+	{ "keys": ["ctrl+shift+o"], "command": "prompt_open_folder" },
+
 	// EasyMotion
 	{ "keys": ["alt+d", "<character>"], "command": "easy_motion", "args": {"select_text": false} },
 
