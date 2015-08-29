@@ -14,7 +14,8 @@
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
 	type = cat-file -t
 	dump = cat-file -p
-	dft = difftool
+	dft  = difftool
+	sm   = submodule
 [diff]
 	tool = vimdiff
 [difftool]
