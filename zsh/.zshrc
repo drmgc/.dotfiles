@@ -61,7 +61,7 @@ setopt hist_reduce_blanks
 ####
 #### etc.
 setopt correctall
-#setopt autocd
+setopt autocd
 setopt extended_glob
 setopt interactive_comments
 WORDCHARS=''@"
