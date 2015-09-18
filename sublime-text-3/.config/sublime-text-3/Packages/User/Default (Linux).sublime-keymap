@@ -17,7 +17,7 @@
 	{ "keys": ["alt+shift+w"], "command": "toggle_white_space" },
 
 	// Macro
-	{ "keys": ["alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console-log.sublime-macro"} },
+	{ "keys": ["alt+shift+l"], "command": "run_macro_file", "args": {"file": "res://Packages/User/console-log.js.sublime-macro"} },
 
 	//Vintage
 	{ "keys": ["alt+space"], "command": "exit_insert_mode",
