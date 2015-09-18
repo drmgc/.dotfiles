@@ -1,7 +1,7 @@
 DF_DIR=`pwd`
 
 .PHONY : deploy
-deploy: zsh vim git i3 i3status emacs ideavim sublime-text-3
+deploy: zsh vim git i3 i3status emacs ideavim
 
 .PHONY : zsh
 zsh:
@@ -33,6 +33,3 @@ emacs:
 ideavim:
 	ln -sfn $(DF_DIR)/ideavim/.ideavimrc $(HOME)/.ideavimrc
 
-.PHONY : sublime-text-3
-sublime-text-3:
-	ln -sfn $(DF_DIR)/sublime-text-3/.config/sublime-text-3 $(HOME)/.config/sublime-text-3
