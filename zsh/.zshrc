@@ -103,15 +103,11 @@ h() {
 	fi
 }
 
-if [[ "`uname`" == "FreeBSD" ]]; then
-	alias l='ls -lAh'
-else
-	alias ls="ls --color=auto"
-	alias lsG="ls --group-directories-first"
-	alias l="lsG -lAh"
-	alias ll="lsG -Ah"
-	alias lll="lsG -l"
-fi
+alias ls="ls --color=auto"
+alias lsG="ls --group-directories-first"
+alias l="lsG -lAh"
+alias ll="lsG -Ah"
+alias lll="lsG -l"
 alias g='grep'
 alias t="touch"
 
