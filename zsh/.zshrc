@@ -111,6 +111,8 @@ alias lll="lsG -l"
 alias g='grep'
 alias t="touch"
 
+alias gulp="gulp --require coffee-script/register"
+
 # Aptitude
 # alias ahelp='alias | grep aptitude'
 alias ain='sudo aptitude install'
