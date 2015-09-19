@@ -146,17 +146,21 @@ alias unmnt='sudo umount'
 alias gourcew='gource -w --highlight-all-users --highlight-dirs --user-image-dir ~/content/Images/Pictures --user-scale 1'
 alias gourceh='gource -1920x1080 -f --highlight-all-users --highlight-dirs --user-image-dir ~/content/Images/Pictures --user-scale 1'
 
-#alias gitadd='git add'
-#alias gitrm='git rm'
-#alias gitpush='git push'
-#alias gitpop='git pop'
-#alias gitfetch='git fetch'
-#alias gitst='git status'
-#alias githst='git status -s'
-#alias gitci='git commit'
-#alias gitbr='git branch'
-#alias gitco='git checkout'
-#alias githist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
+# Git
+alias ga="git add"
+alias gA="git add -A"
+alias gpush="git push"
+alias gstl="git status"
+alias gst="git status -s"
+alias gci="git commit"
+alias gcim="git commit -m"
+alias gbr="git branch"
+alias gmkbr="git checkout -b"
+alias gco="git checkout"
+alias gl="git hist"
+alias gL="git log"
+alias gdff="git diff"
+alias gre="git rebase"
 
 
 export DEBFULLNAME="Sergey Naumov"
