@@ -113,6 +113,7 @@ else
 	alias lll="lsG -l"
 fi
 alias g='grep'
+alias t="touch"
 
 # Aptitude
 # alias ahelp='alias | grep aptitude'
