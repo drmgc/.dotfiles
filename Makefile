@@ -1,11 +1,7 @@
 DF_DIR=`pwd`
 
 .PHONY : deploy
-deploy: zsh vim git i3 i3status emacs ideavim
-
-.PHONY : zsh
-zsh:
-	ln -sfn $(DF_DIR)/zsh/.zshrc $(HOME)/.zshrc
+deploy: vim git i3 i3status emacs ideavim
 
 .PHONY : vim
 vim:
