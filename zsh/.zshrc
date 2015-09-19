@@ -162,6 +162,10 @@ alias gL="git log"
 alias gdff="git diff"
 alias gre="git rebase"
 
+# Пути
+alias s="cd ~/sandbox"
+alias p="cd ~/prj"
+
 
 export DEBFULLNAME="Sergey Naumov"
 export DEBEMAIL="drmgc@yandex.ru"
