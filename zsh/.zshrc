@@ -106,25 +106,16 @@ h() {
 if [[ "`uname`" == "FreeBSD" ]]; then
 	alias l='ls -lAh'
 else
-	alias l='ls -lAh --color=auto --group-directories-first'
-	alias ll='ls -Ah --color=auto --group-directories-first'
-	alias ls='ls --color=auto --group-directories-first'
-	alias lg='ll | grep'
+	alias ls="ls --color=auto"
+	alias lsG="ls --group-directories-first"
+	alias l="lsG -lAh"
+	alias ll="lsG -Ah"
+	alias lll="lsG -l"
 fi
 alias g='grep'
-alias se='sudoedit'
-
-alias offmn='sleep 1; xset dpms force off'
-
-# utils
-acktodos() {
-	ack TODO $*
-	ack FIXME $*
-}
 
 # Aptitude
-alias ahelp='alias | grep aptitude'
-
+# alias ahelp='alias | grep aptitude'
 alias ain='sudo aptitude install'
 alias arm='sudo aptitude remove'
 alias apu='sudo aptitude purge'
@@ -155,10 +146,6 @@ alias unmnt='sudo umount'
 alias gourcew='gource -w --highlight-all-users --highlight-dirs --user-image-dir ~/content/Images/Pictures --user-scale 1'
 alias gourceh='gource -1920x1080 -f --highlight-all-users --highlight-dirs --user-image-dir ~/content/Images/Pictures --user-scale 1'
 
-alias lockscr="i3lock -c 000000"
-
-alias emacsnw="emacs -nw"
-
 #alias gitadd='git add'
 #alias gitrm='git rm'
 #alias gitpush='git push'
@@ -170,8 +157,6 @@ alias emacsnw="emacs -nw"
 #alias gitbr='git branch'
 #alias gitco='git checkout'
 #alias githist='git log --pretty=format:"%h %ad | %s%d [%an]" --graph --date=short'
-
-
 
 
 export DEBFULLNAME="Sergey Naumov"
