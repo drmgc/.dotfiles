@@ -174,9 +174,10 @@ focus_follows_mouse no
 new_window none
 new_float normal
 
-exec feh --bg-scale "/home/drmgc/content/Images/Pictures/wallpaper" &
+exec feh --bg-scale "/home/drmgc/assets/pictures/wallpapers/current" &
 exec kmix &
 exec padevchooser &
+exec shutter &
 
 bar {
 	position top
