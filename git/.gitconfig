@@ -2,7 +2,7 @@
 	name = Sergey Naumov
 	email = drmgc@yandex.ru
 [core]
-	editor = nvim
+	editor = vim
 [merge]
 	tool = sublime
 [alias]
