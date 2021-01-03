@@ -10,7 +10,7 @@ vim:
 
 .PHONY : i3
 i3:
-	ln -sfn $(DF_DIR)/i3/.i3 $(HOME)/.i3
+	ln -sfn $(DF_DIR)/i3/ $(HOME)/.i3
 
 .PHONY : i3status
 i3status:
