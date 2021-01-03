@@ -14,7 +14,11 @@ i3:
 
 .PHONY : i3status
 i3status:
-	ln -sfn $(DF_DIR)/i3status/.i3status.conf $(HOME)/.i3status.conf
+	ln -sfn $(DF_DIR)/i3status/ $(HOME)/.config/i3status
+
+.PHONY : rofi
+rofi:
+	ln -sfn $(DF_DIR)/rofi $(HOME)/.config/rofi
 
 .PHONY : git
 git:

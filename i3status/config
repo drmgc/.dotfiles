@@ -1,0 +1,73 @@
+# -*- mode: prog-mode; indent-tabs-mode:t;tab-width:4; -*-
+
+general {
+	output_format = "i3bar"
+	colors = true
+	markup = pango
+	interval = 1
+	color_good = '#2f343f'
+	color_degraded = '#ebcb8b'
+	color_bad = '#ba5e57'
+}
+
+order += "load"
+order += "cpu_temperature 0"
+order += "cpu_usage"
+order += "disk /"
+order += "disk /home"
+order += "ethernet eth0"
+order += "tztime custom_uptime"
+order += "volume master"
+order += "tztime local"
+
+load {
+	format = " %1min, %5min, %15min load"
+}
+
+cpu_usage {
+    format = " %usage"
+}
+
+cpu_temperature 0 {
+	format = "<span background='#bf616a'>  %degrees °C </span>"
+	path = "/sys/class/thermal/thermal_zone0/temp"
+}
+
+disk "/" {
+	format = "<span background='#fcc' foreground='#000'>  </span> %avail Avail"
+
+	low_threshold = "10"
+	threshold_type = "gbytes_avail"
+	format_below_threshold = "<span background='#fcc' color='#000'>  </span> Warning: %avail"
+}
+
+disk "/home" {
+	format = "<span background='#a1d569'>  </span> %avail Avail"
+
+	low_threshold = "10"
+	threshold_type = "gbytes_avail"
+	format_below_threshold = "<span background='#a1d569' color='#000'>  </span> Warning: %avail"
+}
+
+ethernet eth0 {
+	format_up = "  eth0 %ip "
+	format_down = "  eth0 disconnected "
+}
+
+volume master {
+	format = "  %volume "
+	format_muted = "<span foreground='#ebcb8b'>  Muted </span>"
+	device = "default"
+	mixer = "Master"
+	mixer_idx = 0
+}
+
+tztime local {
+	#format = "<span background='#81a1c1'> %time </span>"
+	format = "%time "
+	format_time = " %d.%m.%Y %H:%M %a"
+}
+
+tztime custom_uptime {
+	format = "custom_uptime"
+}
