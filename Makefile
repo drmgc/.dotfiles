@@ -1,35 +1,37 @@
 DF_DIR=`pwd`
 
-.PHONY : deploy
-deploy: vim git i3 i3status emacs ideavim
+.PHONOY : default
+default:
+	$(info **** Target deploy mode is not selected ****)
+
+.PHONY : deploy-common
+deploy-common: vim git i3 i3status ideavim
+
+.PHONY : deploy-sabertooth
+deploy-sabertooth: deploy-common
 
 .PHONY : vim
 vim:
-	ln -sfn $(DF_DIR)/vim/.vim $(HOME)/.vim
-	ln -sfn $(DF_DIR)/vim/.vimrc $(HOME)/.vimrc
+	ln -svn $(DF_DIR)/vim/.vim $(HOME)/.vim
+	ln -svn $(DF_DIR)/vim/.vimrc $(HOME)/.vimrc
 
 .PHONY : i3
 i3:
-	ln -sfn $(DF_DIR)/i3/ $(HOME)/.i3
+	ln -svn $(DF_DIR)/i3/ $(HOME)/.i3
 
 .PHONY : i3status
 i3status:
-	ln -sfn $(DF_DIR)/i3status/ $(HOME)/.config/i3status
+	ln -svn $(DF_DIR)/i3status/ $(HOME)/.config/i3status
 
 .PHONY : rofi
 rofi:
-	ln -sfn $(DF_DIR)/rofi $(HOME)/.config/rofi
+	ln -svn $(DF_DIR)/rofi $(HOME)/.config/rofi
 
 .PHONY : git
 git:
-	ln -sfn $(DF_DIR)/git/.gitconfig $(HOME)/.gitconfig
-
-.PHONY : emacs
-emacs:
-	ln -sfn $(DF_DIR)/emacs/.emacs $(HOME)/.emacs
-	ln -sfn $(DF_DIR)/emacs/.emacs.d $(HOME)/.emacs.d
+	ln -svn $(DF_DIR)/git/.gitconfig $(HOME)/.gitconfig
 
 .PHONY : ideavim
 ideavim:
-	ln -sfn $(DF_DIR)/ideavim/.ideavimrc $(HOME)/.ideavimrc
+	ln -svn $(DF_DIR)/ideavim/.ideavimrc $(HOME)/.ideavimrc
 
