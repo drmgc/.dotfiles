@@ -11,21 +11,20 @@ general {
 }
 
 order += "load"
-order += "cpu_temperature 0"
+# order += "cpu_temperature 0"
 order += "cpu_usage"
 order += "disk /"
 order += "disk /home"
 order += "ethernet eth0"
-order += "tztime custom_uptime"
 order += "volume master"
 order += "tztime local"
 
 load {
-	format = " %1min, %5min, %15min load"
+	format = "<span foreground='#334'> %1min ~ %5min ~ %15min </span>"
 }
 
 cpu_usage {
-    format = " %usage"
+    format = "<span foreground='#668'>   %usage </span>"
 }
 
 cpu_temperature 0 {
@@ -34,7 +33,7 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-	format = "<span background='#fcc' foreground='#000'>  </span> %avail Avail"
+	format = "<span foreground='#777'> <span foreground='#fcc'></span> %avail Avail</span>"
 
 	low_threshold = "10"
 	threshold_type = "gbytes_avail"
@@ -42,7 +41,7 @@ disk "/" {
 }
 
 disk "/home" {
-	format = "<span background='#a1d569'>  </span> %avail Avail"
+	format = " <span foreground='#a1d569'></span> <span foreground='#777'>%avail Avail</span>"
 
 	low_threshold = "10"
 	threshold_type = "gbytes_avail"
@@ -63,11 +62,6 @@ volume master {
 }
 
 tztime local {
-	#format = "<span background='#81a1c1'> %time </span>"
-	format = "%time "
-	format_time = " %d.%m.%Y %H:%M %a"
-}
-
-tztime custom_uptime {
-	format = "custom_uptime"
+	format = "  %time"
+	format_time = "%a %d.%m.%Y %H:%M"
 }
