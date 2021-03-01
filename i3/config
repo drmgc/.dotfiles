@@ -188,11 +188,12 @@ new_window none
 new_float normal
 
 exec xrandr --dpi 96
+exec compton -b
 exec setxkbmap -option compose:ralt
 exec feh --bg-scale "/home/drmgc/assets/pictures/wallpapers/current" &
 exec kmix &
 exec padevchooser &
-exec shutter --min_at_startup &
+# exec shutter --min_at_startup &
 exec volumeicon &
 
 bar {
