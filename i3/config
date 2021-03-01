@@ -164,6 +164,16 @@ bindsym $mod+r mode "resize"
 #####
 #####
 
+assign [class="Chromium"] number 1 output left
+assign [class="UnityHub"] number 2 output left
+assign [class="Unity"] number 2 output left
+
+assign [class="Emacs"] number 3 output right
+
+#####
+#####
+#####
+
 # class                 border  backgr. text    indicator
 #client.focused          #333333 #333333 #ffffff #555555
 #client.focused_inactive #222222 #222222 #ffffff #444444
