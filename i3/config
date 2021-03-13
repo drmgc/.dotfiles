@@ -82,9 +82,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+bindsym $mod+Shift+s layout stacking
 bindsym $mod+Shift+t layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -93,7 +93,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+p focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -131,7 +131,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Ctrl+Alt+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -164,11 +164,18 @@ bindsym $mod+r mode "resize"
 #####
 #####
 
-assign [class="Chromium"] number 1 output left
-assign [class="UnityHub"] number 2 output left
-assign [class="Unity"] number 2 output left
+# assign [class="Chromium"] output left
+# assign [class="UnityHub"] output left
+# assign [class="Unity"] output left
 
-assign [class="Emacs"] number 3 output right
+# assign [class="Telegram"] output right
+# assign [class="Emacs"] output primary
+
+bindsym $mod+b [class="Chromium"] focus
+bindsym $mod+e [class="Emacs"] focus
+bindsym $mod+u [class="Unity"] focus
+bindsym $mod+a [class="Aseprite"] focus
+bindsym $mod+g [class="Godot"] focus
 
 #####
 #####
