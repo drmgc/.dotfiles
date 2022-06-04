@@ -23,7 +23,7 @@ set $alt Mod1
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
 font pango:DejaVu Sans Mono 8
-#font pango:Noto Sans 8
+font pango:FontAwesome 9
 # Before i3 v4.8, we used to recommend this one as the default:
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # The font above is very space-efficient, that is, it looks good, sharp and
@@ -175,7 +175,7 @@ bindsym $mod+b [class="Chromium"] focus
 bindsym $mod+e [class="Emacs"] focus
 bindsym $mod+u [class="Unity"] focus
 bindsym $mod+a [class="Aseprite"] focus
-bindsym $mod+g [class="Godot"] focus
+bindsym $mod+g [class="Gimp"] focus
 
 #####
 #####
@@ -210,12 +210,14 @@ new_float normal
 
 exec xrandr --dpi 96
 exec compton -b
-exec setxkbmap -option compose:ralt
 exec feh --bg-scale "/home/drmgc/assets/pictures/wallpapers/current" &
 exec kmix &
 exec padevchooser &
 # exec shutter --min_at_startup &
 exec volumeicon &
+exec setxkbmap -option compose:ralt
+exec setxkbmap -option ctrl:ralt_rctrl
+
 
 bar {
 	position top
