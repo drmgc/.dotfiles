@@ -27,3 +27,7 @@
 	helper = cache --timeout=3600
 [init]
 	defaultBranch = main
+
+[includeIf "gitdir:~/prj/"]
+	path = ~/prj/.gitconfig
+
