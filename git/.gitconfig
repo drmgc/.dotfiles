@@ -6,7 +6,7 @@
 	editor = vim
 [alias]
 	co   = checkout
-	ci   = commit
+	ci   = commit -S -m
 	st   = status
 	hst  = status -s
 	br   = branch
