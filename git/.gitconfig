@@ -3,8 +3,6 @@
 	email = drmgc@yandex.ru
 [core]
 	editor = vim
-[merge]
-	tool = sublime
 [alias]
 	co   = checkout
 	ci   = commit
@@ -17,12 +15,14 @@
 	dft  = difftool
 	sm   = submodule
 [diff]
-	tool = vimdiff
+	tool = difftastic
+	; external = difft
 [difftool]
 	prompt = false
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
-	trustExitCode = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+[pager]
+	difftool = true
 [credential]
 	helper = cache --timeout=3600
 [init]
