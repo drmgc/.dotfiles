@@ -74,7 +74,7 @@ ZSH_THEME="dpoggi"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew asdf direnv zsh-syntax-highlighting terraform docker-compose)
+plugins=(git brew asdf direnv zsh-syntax-highlighting terraform docker-compose safe-paste)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,17 +97,21 @@ setopt HIST_IGNORE_SPACE
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
 #
-# Example aliases
+# ALIASES
+#
+
 alias nv="nvim"
 alias lg="lazygit"
 alias t="touch"
 
+# npm
 alias npr="npm run"
+alias npj="npx jest --collectCoverage=false"
+alias npjcov="npx jest"
+
+# docker
+alias dps="docker ps"
 
 # I don't like behaviour of /usr/libexec/mc/mc-wrapper.sh
 unalias mc
