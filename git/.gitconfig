@@ -1,6 +1,7 @@
 [user]
 	name = Sergey Naumov
 	email = drmgc@yandex.ru
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINxMvZ31sldJKNyqnxKP4e2uiECyoZeMXyZGjALDO/Wo drmgc@yandex.ru
 [core]
 	editor = vim
 [alias]
@@ -34,3 +35,8 @@
 [http]
 	postBuffer = 4096M
 	version = HTTP/1.1
+
+[gpg]
+  format = ssh
+[commit]
+  gpgsign = true
