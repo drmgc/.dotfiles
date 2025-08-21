@@ -31,3 +31,6 @@
 [includeIf "gitdir:~/prj/"]
 	path = ~/prj/.gitconfig
 
+[http]
+	postBuffer = 4096M
+	version = HTTP/1.1
