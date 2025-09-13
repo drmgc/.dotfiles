@@ -103,6 +103,7 @@ setopt HIST_IGNORE_SPACE
 
 alias nv="nvim"
 alias lg="lazygit"
+alias lj="lazyjj"
 alias t="touch"
 
 # npm
