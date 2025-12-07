@@ -35,3 +35,7 @@ git:
 ideavim:
 	ln -svn $(DF_DIR)/ideavim/.ideavimrc $(HOME)/.ideavimrc
 
+.PHONY : tmux
+tmux:
+	ln -svn $(DF_DIR)/.tmux.conf $(HOME)/.tmux.conf
+
