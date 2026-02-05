@@ -39,3 +39,7 @@ ideavim:
 tmux:
 	ln -svn $(DF_DIR)/.tmux.conf $(HOME)/.tmux.conf
 
+.PHONY : zellij
+zellij:
+	ln -svn $(DF_DIR)/zellij $(HOME)/.config/zellij
+
