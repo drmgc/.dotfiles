@@ -104,6 +104,7 @@ setopt HIST_IGNORE_SPACE
 alias nv="nvim"
 alias lg="lazygit"
 alias lj="lazyjj"
+alias zj="zellij"
 alias t="touch"
 
 # npm
@@ -113,6 +114,9 @@ alias npjcov="npx jest"
 
 # docker
 alias dps="docker ps"
+
+# tmux
+alias tmuxa="tmux a"
 
 # I don't like behaviour of /usr/libexec/mc/mc-wrapper.sh
 unalias mc
