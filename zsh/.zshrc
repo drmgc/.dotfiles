@@ -105,6 +105,7 @@ alias nv="nvim"
 alias lg="lazygit"
 alias lj="lazyjj"
 alias zj="zellij"
+alias oc="opencode"
 alias t="touch"
 
 # npm
