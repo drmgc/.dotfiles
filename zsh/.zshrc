@@ -112,6 +112,7 @@ alias t="touch"
 alias npr="npm run"
 alias npj="npx jest --collectCoverage=false"
 alias npjcov="npx jest"
+alias ncu="npx npm-check-updates"
 
 # docker
 alias dps="docker ps"
