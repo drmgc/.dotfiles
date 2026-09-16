@@ -1,0 +1,15 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "permission": {
+    "Grep *": "allow",
+    "Todowrite *": "allow",
+    "Read": {
+      "*.env": "deny",
+      "*.env.*": "deny",
+      ".env": "deny",
+      "*": "allow"
+    },
+    "Glob *": "allow",
+    "*": "ask"
+  }
+}

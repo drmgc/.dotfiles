@@ -43,3 +43,7 @@ tmux:
 zellij:
 	ln -svn $(DF_DIR)/zellij $(HOME)/.config/zellij
 
+.PHONY : opencode
+opencode:
+	ln -svn $(DF_DIR)/opencode $(HOME)/.config/opencode
+
