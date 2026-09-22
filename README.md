@@ -17,3 +17,18 @@ make
 ## Контакты
 [Bitbucket](https://bitbucket.org/drmgc)
 [GitHub](https://github.com/DrMGC)
+
+## Dependecies
+
+### Ubuntu
+
+```sh
+sudo apt install -y \
+    curl wget build-essential \
+    zsh \
+    ripgrep \
+    git lazygit
+    mc
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
