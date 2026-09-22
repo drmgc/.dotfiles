@@ -119,6 +119,3 @@ alias dps="docker ps"
 
 # tmux
 alias tmuxa="tmux a"
-
-# I don't like behaviour of /usr/libexec/mc/mc-wrapper.sh
-unalias mc
