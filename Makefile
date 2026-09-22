@@ -47,3 +47,6 @@ zellij:
 opencode:
 	ln -svn $(DF_DIR)/opencode $(HOME)/.config/opencode
 
+.PHONY : zsh
+zsh:
+	ln -svn $(DF_DIR)/zsh/.zshrc $(HOME)/.zshrc
