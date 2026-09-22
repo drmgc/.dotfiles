@@ -1,7 +1,7 @@
 [user]
 	name = Sergey Naumov
 	email = drmgc@yandex.ru
-	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINxMvZ31sldJKNyqnxKP4e2uiECyoZeMXyZGjALDO/Wo drmgc@yandex.ru
+	signingkey = /home/drmgc/.ssh/id_ed25519_git
 [core]
 	editor = vim
 [alias]
