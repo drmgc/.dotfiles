@@ -19,6 +19,7 @@ sudo apt update && \
 sudo apt install -y \
     curl wget build-essential bsdmainutils \
     zsh \
+    direnv \
     ripgrep bat \
     git \
     gpg pass \
@@ -122,5 +123,17 @@ asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf install nodejs latest
 asdf set nodejs VERSION
 echo 'legacy_version_file = yes' >> .asdfrc
+```
+
+### Bun
+
+```sh
+curl -fsSL https://bun.com/install | bash
+```
+
+### OpenCode
+
+```sh
+bun install -g --trust @opencode/cli
 ```
 
